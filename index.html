@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>McLaren Formula 1 Team</title>
+    <link rel="stylesheet" href="assets\style\style.css">
+    <style>
+        .jumbotron{
+            text-align: center;
+            color: white;
+            background-image: url('assets/image/Home_page_capture_3_post_GBR.jpg');
+            background-size: cover;
+            background-position: top center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="jumbotron" >
+            <div class="title">
+                <h1>McLaren<br>Formula 1 Team</h1>
+            </div>
+        </div>
+        <nav>
+            <div class="dropDownMenu">
+                <button onclick="dropDownMenu()" class="btnMenu">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#sejarah"><b>Sejarah</b></a>
+                  <a href="#driver"><b>Pembalap</b></a>
+                  <a href="#mobil"><b>Mobil Balap</b></a>
+                  <a href="#jadwal-balapan"><b>Jadwal Balapan</b></a>
+                </div>
+              </div>
+            <div>
+                <img src="assets/image/mclaren_logo.png" id="mclaren-logo" alt="McLaren Logo">
+            </div>
+        </nav>
+    </header>
+
+    <Main>
+        <div id="content">
+            <article id="sejarah" class="card">
+                <h2>Sejarah</h2>
+                <img src="assets\image\bruce_mclaren.jpeg" class="featured-image" alt="Sejarah">
+                <p><b>McLaren Racing Limited</b> merupakan sebuah tim balap mobil yang berkantor pusat di McLaren Technology Centre di Woking, Surrey, Inggris. McLaren dikenal sebagai tim kontruktor Formula Satu tertua kedua yang masih aktif hingga saat ini dan tim paling sukses kedua setelah Ferrari. McLaren telah memenangi 12 gelar juara dunia pembalap dan 8 gelar juara dunia konstruktor. Selain Formula Satu, McLaren juga berkompetisi di kejuaraan balap mobil roda terbuka Amerika sebagai tim dan konstruktor sasis, serta pernah berhasil memenangkan kejuaraan balap mobil sport Canadian-American Challenge Cup (Can-Am). Tim ini merupakan anak perusahaan dari McLaren Group selaku pemegang saham terbesarnya.</p>
+
+                <p>Tim yang didirikan pada 1963 oleh pembalap dari Selandia Baru, Bruce McLaren, ini memenangkan Grand Prix pertamanya pada Grand Prix Belgia 1968. Namun, kesuksesan awal mereka justru terjadi di Can-Am antara tahun 1967 dan 1971 ketika McLaren mendominasi kejuaraan tersebut. McLaren terus melanjutkan kesuksesan di Amerika Serikat dengan memenangkan Indianapolis 500 oleh Mark Donohue pada 1972 dan Johnny Rutherford pada 1974 dan 1976. Setelah Bruce McLaren meninggal dunia akibat kecelakaan dalam sebuah pengujian pada 1970, Teddy Mayer mengambil alih kepemimpinan tim hingga mereka berhasil meraih gelar Kejuaraan Dunia Konstruktor Formula Satu pertamanya pada 1974. Emerson Fittipaldi dan James Hunt kemudian memenangi Kejuaraan Dunia Pembalap, masing-masing pada 1974 dan 1976. Tahun 1974 juga menjadi awal kerja sama jangka panjang McLaren dengan sponsor rokok Marlboro.</p>
+                    
+                <p>Pada 1981, McLaren melebur menjadi satu dengan tim Project Four Racing milik Ron Dennis. Dennis kemudian menjabat sebagai kepala tim dan membeli kepemilikan McLaren. Peristiwa ini menandai dimulainya era paling sukses mereka yang memenangi total tujuh Kejuaraan Dunia Pembalap oleh pembalap Niki Lauda, Alain Prost, dan Ayrton Senna dan enam Kejuaraan Dunia Konstruktor menggunakan mesin Porsche dan Honda. Kombinasi pembalap Prost dan Senna mampu mendominasi balapan mereka memenangi hampir semua balapan pada 1988 tetapi Prost pada akhirnya bergabung ke Ferrari karena persaingan tersebut.</p>
+                    
+                <p>Tim Williams yang sama-sama berasal dari Inggris merupakan rival yang paling konsisten pada periode ini, dengan memenangi kejuaraan dunia konstruktor pada 1984 dan 1994. Pada pertengahan 1990-an, Honda mundur dari partisipasinya di Formula Satu, Senna pindah ke Williams, dan McLaren menjalani tiga musim tanpa kemenangan. McLaren baru kembali memenangi kejuaraan pada 1998 and 1999 bersama mesin Mercedes-Benz, sponsor West, mantan perancang mobil tim Williams, Adrian Newey, dan pembalap Mika Häkkinen. Pada tahun 2000-an, tim ini menjadi tim papan atas dengan pembalap Lewis Hamilton meraih gelar juara dunia pada 2008.</p>
+            </article>   
+            <article id="driver" class="card">
+                <h2>Pembalap McLaren Musim 2022</h2>
+                <div class="driver-row">
+                    <div class="ln4">
+                        <h2>Lando Norris</h2>
+                        <img src="assets\image\LN_website_hero_image_March_2022.jpg" class="driver-image" alt="Lando Norris">
+                        <table>
+                            <tr>
+                                <th>HOME TOWN</th>
+                                <td>GLASTONBURY / UK</td>
+                            </tr>
+                            <tr>
+                                <th>D.O.B</th>
+                                <td>13 NOV. 1999</td>
+                            </tr>
+                            <tr>
+                                <th>F1 DEBUT</th>
+                                <td>AUSTRALIA / 2019</td>
+                            </tr>
+                            <tr>
+                                <th>DRIVER NO.</th>
+                                <td>#4</td>
+                            </tr>
+                            <tr>
+                                <th>PODIUMS</th>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <th>POLES</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th>FASTEST LAPS</th>
+                                <td>3</td>
+                            </tr>
+                        </table>
+                        <button class="btnDetailDriver" onclick="popUpDriverLn()">Biografi Driver
+                            <div class="txtDetailDriver" id="detailDriverLn">
+                                <h2>Lando Norris</h2>
+                                <p>Lando Norris mungkin tidak dinamai setelah pemberontak Star Wars Lando Calrissian, ibunya hanya menyukai moniker tetapi dia memiliki bakat dan semangat juang dalam persediaan yang melimpah.</p>
+
+                                <p>McLaren memiliki remaja Inggris di buku mereka selama dua tahun sebelum melacaknya dengan cepat ke galaksi bintang F1 pada tahun 2019. Seorang petasan dalam karir juniornya, dengan kecenderungan untuk posisi terdepan dan pergumulan roda-ke-roda, Norris tidak membiarkan mereka turun.</p>
+                                    
+                                <p>Dipasangkan dengan Carlos Sainz yang berperingkat tinggi dan jauh lebih berpengalaman, musim rookie nya sangat mengesankan, mengungguli pembalap Spanyol itu dalam pertarungan kualifikasi head-to-head mereka, mencetak poin pada 11 kesempatan, dan hanya nyaris kehilangan 10 besar. penempatan kejuaraan. Itu adalah pola yang sama pada tahun 2020, dengan pembalap Inggris yang ramah mengamankan podium perdananya dan naik ke urutan kesembilan secara keseluruhan.</p>
+                                    
+                                <p>Kenaikannya yang tak terbendung berlanjut pada tahun 2021, dengan empat podium lebih lanjut dan hampir memenangkan balapan saat ia mendominasi rekan setimnya yang lebih senior lainnya, Daniel Ricciardo, untuk naik ke P6 di klasemen pembalap terakhir.</p>
+                                    
+                                <p>Bakat yang menarik di trek, jauh dari itu Norris penuh dengan pesona sederhana dan sisi artistik melihatnya merancang dan melukis perlengkapan balapnya sendiri sebagai hobi. Fokus untuk masa depan adalah menyatukan seni dan ambisi di trek karena McLaren mengandalkan janji para pemuda untuk membawa mereka kembali ke puncak.</p>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="dr3">
+                        <h2>Daniel Ricciardo</h2>
+                        <img src="assets\image\DR_website_hero_image_March_2022.jpg" class="driver-image" alt="Daniel Ricciardo">
+                        <table>
+                            <tr>
+                                <th>HOME TOWN</th>
+                                <td>PERTH, AUS</td>
+                            </tr>
+                            <tr>
+                                <th>D.O.B</th>
+                                <td>1 JUL 1989</td>
+                            </tr>
+                            <tr>
+                                <th>F1 DEBUT</th>
+                                <td>G.BRITAIN / 2011</td>
+                            </tr>
+                            <tr>
+                                <th>DRIVER NO.</th>
+                                <td>#3</td>
+                            </tr>
+                            <tr>
+                                <th>PODIUMS</th>
+                                <td>24</td>
+                            </tr>
+                            <tr>
+                                <th>POLES</th>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th>FASTEST LAPS</th>
+                                <td>16</td>
+                            </tr>
+                        </table>
+                        <button class="btnDetailDriver" onclick="popUpDriverDr()">Biografi Driver
+                            <div class="txtDetailDriver" id="detailDriverDr">
+                                <h2>Daniel Ricciardo</h2>
+                                <p>Pengemudi berhati-hatilah karena di balik kepribadian santai dan senyum yang lebar, Ricciardo adalah pembalap yang tajam dengan gigitan.</p>
+
+                                <p>Pembalap Australia ini menggabungkan seluruh kecepatan dengan keahlian balap yang mengesankan. Tidak pernah takut untuk mendorong hingga batas jika itu berarti melakukan operan, Ricciardo sudah terbukti menjadi pemenang balapan, mampu secara konsisten finis di ujung bisnis tabel kejuaraan dengan mesin yang tepat.</p>
+                                    
+                                <p>Peraih podium reguler di hari-harinya bersama Red Bull, Ricciardo telah membaptis langkah-langkah di seluruh dunia dengan menyiram budaya Aussie dengan 'Shoey' saat ia meneguk sampanye dari sepatu balap yang basah. Ya itu konyol, tetapi perayaan merek dagang menggambarkan mengapa dia dicintai karena selera humornya tetapi tidak pernah diremehkan di jalurnya.</p>
+                                    
+                                <p>Perpindahan karirnya berikutnya ke tim kerja Renault pada tahun 2019 membawa tantangan baru bagi pilot Perth, tetapi gagal mewujudkan mimpinya untuk mengikuti Jack Brabham dan Alan Jones sebagai juara dunia berikutnya dari Down Under dan dia pindah ke McLaren untuk tahun 2021.</p>
+                                    
+                                <p>Di sana ia telah menemukan rekan setim muda yang tangguh di Lando Norris, namun tetap kembali ke jalur kemenangan. Apapun yang terjadi selanjutnya, Ricciardo pasti akan tetap tersenyum.</p>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </article>
+
+            <article id="mobil" class="card">
+                <h2>Mobil Balap</h2>
+                <img src="assets\image\2022_MCL_LAUNCH_MCL36_SAFE_Creative_tech_spec_heroe_1600x620.jpg" class="featured-image" alt="McLaren MCL36">
+                <h3>McLaren MCL36</h3>
+                <p>McLaren MCL36 adalah mobil Formula Satu yang dirancang di bawah kepemimpinan James Key dan diproduksi oleh McLaren untuk bersaing di Kejuaraan Dunia Formula Satu 2022.MCL36 dibangun dengan regulasi teknis Formula Satu generasi 2022 yang baru, yang awalnya dimaksudkan untuk diperkenalkan pada tahun 2021.
+                </p>
+                <p>
+                Mobil itu memulai debutnya di Grand Prix Bahrain 2022, dan dikemudikan oleh Daniel Ricciardo dan Lando Norris. Setelah sebelas balapan, mobil tersebut berhasil mendapatkan satu lap tercepat dan satu podium.</p>
+                <section>
+                    <h3>Spesifikasi</h3>
+                    <table class="spesifikasi">
+                        <tr>
+                            <th>Sasis</th>
+                            <td>Serat Karbon</td>
+                        </tr>
+                        <tr>
+                            <th>Suspensi Depan</th>
+                            <td>Serat karbon dan kaki suspensi pullrod dari baja dan elemen yang beroperasi di dalam batang torsi dan sistem peredam</td>
+                        </tr>
+                        <tr>
+                            <th>Suspensi Belakang</th>
+                            <td>Elemen suspensi wishbone dan pushrod dari serat karbon yang mengoperasikan batang torsi dan sistem peredam</td>
+                        </tr>
+                        <tr>
+                            <th>Mesin</th>
+                            <td>Mercedes-AMG F1 M13 E Performance<br>
+                            Mesin V6 turbocharged injeksi 1,6L. Putaran mesin hingga 15.000RPM. Berpenggerak roda belakang dengan tata letak mesin di tengah</td>
+                        </tr>
+                        <tr>
+                            <th>Motor Elektrik</th>
+                            <td>Mercedes-AMG<br>
+                            Kinetik dan termal energy recovery systems</td>
+                        </tr>
+                        <tr>
+                            <th>Transmisi</th>
+                            <td>8 kecepatan + 1 mundur transmisi semi otomatis yang dioperasikan melalui paddle shifter dengan limited slip differential</td>
+                        </tr>
+                        <tr>
+                            <th>Baterai</th>
+                            <td>Lithium-ion battery</td>
+                        </tr>
+                        <tr>
+                            <th>Berat</th>
+                            <td>795 kg (termasuk pengemudi, tidak termasuk bahan bakar)</td>
+                        </tr>
+                        <tr>
+                            <th>Rem</th>
+                            <td>Kaliper 6 piston, cakram / bantalan dari karbon yang berventilasi</td>
+                        </tr>
+                        <tr>
+                            <th>Ban</th>
+                            <td>Pirelli P Zero (kering)
+                                Pirelli Cinturato (basah)</td>
+                        </tr>
+                        <tr>
+                            <th>Kopling</th>
+                            <td>Kopling Dioperasikan secara elektro-hidraulik, multi-pelat karbon</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+            <article id="jadwal-balapan" class="card">
+                <h2>Jadwal Balapan</h2>
+                <div class="jadwal-row">
+                    <div class="track">
+                        <b>Round 1</b><br>
+                        18-20 Maret 2022<br><br>
+                        <b>Bahrain</b><br>
+                        FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 2</b><br>
+                        25-27 Maret 2022<br><br>
+                        <b>Saudi Arabia</b><br>
+                        FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 3</b><br>
+                        08-10 April 2022<br><br>
+                        <b>Australia</b><br>
+                        FORMULA 1 HEINEKEN AUSTRALIAN GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 4</b><br>
+                        22-24 April 2022<br><br>
+                        <b>Italy</b><br>
+                        FORMULA 1 ROLEX GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 5</b><br>
+                        06-08 Mei 2022<br><br>
+                        <b>United States</b><br>
+                        FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 6</b><br>
+                        20-22 Mei 2022<br><br>
+                        <b>Spain</b><br>
+                        FORMULA 1 PIRELLI GRAN PREMIO DE ESPANA 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 7</b><br>
+                        27-29 Mei 2022<br><br>
+                        <b>Monaco</b><br>
+                        FORMULA 1 GRAND PRIX DE MONACO 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 8</b><br>
+                        10-12 Juni 2022<br><br>
+                        <b>Azerbaijan</b><br>
+                        FORMULA 1 AZERBAIJAN GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 9</b><br>
+                        17-19 Juni 2022<br><br>
+                        <b>Canada</b><br>
+                        FORMULA 1 AWS GRAND PRIX DU CANADA 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 10</b><br>
+                        01-03 Juli 2022<br><br>
+                        <b>Great Britain</b><br>
+                        FORMULA 1 LENOVO BRITISH GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 11</b><br>
+                        08-10 Juli 2022<br><br>
+                        <b>Austria</b><br>
+                        FORMULA 1 ROLEX GROSSER PREIS VON OSTERREICH 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 12</b><br>
+                        22-24 Juli 2022<br><br>
+                        <b>France</b><br>
+                        FORMULA 1 LENOVO GRAND PRIX DE FRANCE 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 13</b><br>
+                        29-31 Juli 2022<br><br>
+                        <b>Hungary</b><br>
+                        FORMULA 1 ARAMCO MAGYAR NAGYDIJ 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 14</b><br>
+                        26-28 Agustus 2022<br><br>
+                        <b>Belgium</b><br>
+                        FORMULA 1 ROLEX BELGIAN GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 15</b><br>
+                        02-04 September 2022<br><br>
+                        <b>Netherlands</b><br>
+                        FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 16</b><br>
+                        09-11 September 2022<br><br>
+                        <b>Italy</b><br>
+                        FORMULA 1 PIRELLI GRAN PREMIO D'ITALIA 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 17</b><br>
+                        30 September - 02 Oktober 2022<br><br>
+                        <b>Singapore</b><br>
+                        FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 18</b><br>
+                        07-09 Oktober 2022<br><br>
+                        <b>Japan</b><br>
+                        FORMULA 1 HONDA JAPANESE GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 19</b><br>
+                        21-23 Oktober 2022<br><br>
+                        <b>United States</b><br>
+                        FORMULA 1 ARAMCO UNITED STATES GRAND PRIX 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 20</b><br>
+                        28-30 Oktober 2022<br><br>
+                        <b>Mexico</b><br>
+                        FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MEXICO 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 21</b><br>
+                        11-13 November 2022<br><br>
+                        <b>Brazil</b><br>
+                        FORMULA 1 HEINEKEN GRANDE PREMIO DE SAO PAULO 2022
+                    </div>
+                    <div class="track">
+                        <b>Round 22</b><br>
+                        18-20 November 2022<br><br>
+                        <b>Abu Dhabi</b><br>
+                        FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2022
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <article class="profile card">
+                <header>
+                    <h2>Profil</h2>
+                    <figure>
+                        <img src="assets\image\dsc_6972 compress.jpg">
+                        <figcaption>Foto</figcaption>
+                    </figure>
+                </header>
+                <section>
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>Ivan Surya Wicaksana</td>
+                        </tr>
+                        <tr>
+                            <th>Tempat Lahir</th>
+                            <td>Wonosobo</td>
+                        </tr>
+                        <tr>
+                            <th>Tanggal Lahir</th>
+                            <td>17 Juni 1998</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>Jl. Mayor Kaslam No99 Wonosobo</td>
+                        </tr>
+                    </table>
+                    <a href="https://www.dicoding.com/users/ivan_wicaksana" target="_blank" style="text-align: center; text-decoration: none; color:white;">
+                        <div style="background-color: #008ead; margin-top:20px; border-radius: 5px; padding: 5px;">
+                            <b>Klik Untuk Lihat Profil di Dicoding</b>
+                        </div>
+                    </a>
+                </section>
+            </article>
+        </aside>
+    </Main>
+
+    <footer>  
+        <div><b>McLaren &#169; 2022</b></div>
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn"><b>^</b></button>
+
+<script src="assets\script\script.js"></script>
+</body>
+</html>

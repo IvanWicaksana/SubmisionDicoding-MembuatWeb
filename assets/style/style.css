@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+body {
+    font-family: "Quicksand" , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 50px;
+    padding-top: 0px;
+    overflow: auto;
+    background-color: #ff6f00;
+}
+
+h1{
+    font-size: 55px;
+}
+
+h2 {
+    color: #00a2c6;
+    font-family: 'Play' , sans-serif;
+    font-size: 30px;
+}
+  
+h3 {
+    color: #00a2c6;
+    font-family: 'Play' , sans-serif;
+    font-size: 20px;
+}
+
+header{
+    display: inline;
+}
+
+footer {
+    border-top: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid black;
+    height: 20px;
+    padding: 10px;
+    color:#ff6f00;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+nav{
+    background-color:white;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+/* drop down styling */
+
+.btnMenu {
+    background-color: #00a2c6;
+    font-family: 'Play' , sans-serif;
+    color: white;
+    padding: 6px 11px 6px 11px;
+    font-size: 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btnMenu:hover, .btnMenu:focus {
+    background-color: #008ead;
+}
+
+.dropDownMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.dropDownMenu a:hover {background-color: #ff6f0059;}
+
+.show {display: block;}
+
+
+
+#mclaren-logo{
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    max-height: 30px;
+}
+
+#content p{
+    text-indent: 2em;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* driver styling */
+.driver-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.driver-row th{
+    border: 0px;
+}
+
+.ln4,.dr3{
+    flex: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.driver-image{
+    max-height: 150px;
+    object-position: center;
+    object-fit: cover;
+    text-align: center;
+}
+
+.btnDetailDriver{
+    background-color: #008ead;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+  
+.btnDetailDriver .txtDetailDriver {
+    visibility: hidden;
+    width: 96%;
+    height: 500px;
+    background-color: #f1f1f1;
+    color: black;
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 0%;
+    overflow: auto;
+}
+
+#detailDriverDr{
+    left: 0%;
+}
+ 
+.btnDetailDriver .show {
+    visibility: visible;
+}
+
+  
+/* styling jadwal balapan */
+.jadwal-row{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    height: 250px;
+    padding: 20px;
+}
+
+.track{
+    flex-basis: 220px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    transition: transform .1s;
+}
+
+.track:hover{
+    background-color: #ffb47b;
+    transform: scale(1.1);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.title{
+    font-family: 'Play', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 80px;
+}
+
+#content{
+    float: left;
+    width: 75%;
+}
+
+aside{
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width : 150px;
+}
+
+.profile th{
+    text-align: left;
+    vertical-align: top;
+    border: 0px;
+}
+
+.spesifikasi td,th{
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.spesifikasi{
+    width: 100%;
+    border-collapse: collapse;    
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #ff6f00;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+#topBtn:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+    .driver-row{
+        flex-direction: column;
+    }
+    main{
+        padding: 10px;
+        padding-top: 0px;
+    }
+    .card{
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .driver-image{
+        max-height: 110px ;
+    }
+    .spesifikasi td,th{
+        font-size: small;
+    }
+
+    .jadwal-row{
+        height: 220px;
+    }
+
+    .track{
+        flex-basis: 180px;
+        font-size: small;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.17em;
+    }
+
+    .card{
+        margin-bottom: 0px;
+    }
+
+    .btnDetailDriver .txtDetailDriver {
+        height: 440px;
+    }
+}
+
+
+
+
